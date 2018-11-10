@@ -1,0 +1,42 @@
+.h1title {
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.clikem {
+	cursor: initial;
+}
+
+.bg-gradient{
+	background: linear-gradient(25deg, #000, #D13239) !important;
+}
+
+.bg-papaya {
+	background: rgba(255, 239, 213, 0.2) !important;
+}
+
+.bg-gris {
+	background: #D0D3D4 !important;
+	color: #000;
+}
+
+.txt-melocoton {
+	color: #FFDAB9 !important;
+}
+
+.txt-blanco {
+	color: #ffffff !important;
+}
+
+.txt-rosita {
+	color: pink !important;
+}
+.txt-rojo {
+	color: #d13239 !important;
+}
+
+.placeOk::placeholder {
+	color: pink !important;
+}

@@ -26,7 +26,8 @@
     <!-- You can change the theme colors from here -->
     <link href="css/colors/red.css" id="theme" rel="stylesheet">
     <!-- Icons -->
-    <link rel="stylesheet" href="http://cdn.materialdesignicons.com/3.0.39/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/icons/material-design-iconic-font/css/materialdesignicons.min.css">
+    <!-- <link rel="stylesheet" href="http://cdn.materialdesignicons.com/3.0.39/css/materialdesignicons.min.css"> -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and mfile:///home/sentrack/Documentos/edia queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -234,32 +235,6 @@
                             <li class="breadcrumb-item active">Dashboard</li>
                         </ol>
                     </div>-->
-                    <!--<div class="col-md-7 col-4 align-self-center">
-                        <div class="d-flex m-t-10 justify-content-end">
-                            <div class="d-flex m-r-20 m-l-10 hidden-md-down">
-                                <div class="chart-text m-r-10">
-                                    <h6 class="m-b-0"><small>THIS MONTH</small></h6>
-                                    <h4 class="m-t-0 text-info">$58,356</h4>
-                                </div>
-                                <div class="spark-chart">
-                                    <div id="monthchart"></div>
-                                </div>
-                            </div>
-                            <div class="d-flex m-r-20 m-l-10 hidden-md-down">
-                                <div class="chart-text m-r-10">
-                                    <h6 class="m-b-0"><small>LAST MONTH</small></h6>
-                                    <h4 class="m-t-0 text-primary">$48,356</h4>
-                                </div>
-                                <div class="spark-chart">
-                                    <div id="lastmonthchart"></div>
-                                </div>
-                            </div>
-                            <div class="">
-                                <button class="right-side-toggle waves-effect waves-light btn-success btn btn-circle btn-sm pull-right m-l-10"><i
-                                        class="ti-settings text-white"></i></button>
-                            </div>
-                        </div>
-                    </div>-->
                 </div>
                 <!-- ============================================================== -->
                 <!-- End Bread crumb and right sidebar toggle -->
@@ -269,61 +244,76 @@
                 <!-- ============================================================== -->
                 <!-- Row -->
 
-                <div class="row">
-                  <div class="col-md-6 col-lg-4">
-                      <div class="card card-body">
-                          <!-- Row -->
-                          <div class="row padleft">
-                              <!-- Column -->
-                              <div class="round round-lg round-success align-self-center">
-                                  <i class="mdi mdi-harddisk"></i>
-                              </div>
-                              <div class="col p-r-0 align-self-center">
-                                  <h2 class="font-light m-b-0 text-center">CPU</h2>
-                              </div>
-                              <div class="col align-self-center padleftmin">
-                                  <div data-label="20%" class="css-bar m-b-0 css-bar-cgraf css-bar-20"></div>
-                              </div>
-                          </div>
+                <div class="Row">
+                  <div class="col-lg-12">
+                    <div class="card card-outline-inverse">
+                      <div class="card-header">
+                        <h4 class="m-b-0 text-white">Registrar Grupo</h4>
                       </div>
-                  </div>
-
-                  <div class="col-md-6 col-lg-4">
-                      <div class="card card-body">
-                          <!-- Row -->
-                          <div class="row padleft">
-                              <!-- Column -->
-                              <div class="round round-lg round-warning align-self-center">
-                                  <i class="mdi mdi-harddisk"></i>
+                      <div class="card-body">
+                        <form action="#" class="form-horizontal form-bordered">
+                          <div class="form-body">
+                            <h4 class="card-title">Datos</h4>
+                            <hr>
+                            <div class="form-group row">
+                              <label class="control-label text-center col-md-2">Nombre</label>
+                              <div class="col-md-9">
+                                <input type="text" placeholder="Nombre completo" class="form-control">
+                                <small class="form-control-feedback"> </small>
                               </div>
-                              <div class="col p-r-0 align-self-center">
-                                  <h2 class="font-light m-b-0 text-center">Disco Duro</h2>
+                            </div>
+                            <div class="form-group row">
+                              <label class="control-label text-center col-md-2">Nombre (<small>Alias</small>)</label>
+                              <div class="col-md-9">
+                                <input type="text" placeholder="Alias" class="form-control">
+                                <small class="form-control-feedback"> </small>
                               </div>
-                              <div class="col align-self-center padleftmin">
-                                  <div data-label="20%" class="css-bar m-b-0 css-bar-warning css-bar-20"></div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="control-label text-center col-md-2">RFC</label>
+                              <div class="col-md-9">
+                                <input type="text" placeholder="RFC" class="form-control">
+                                <small class="form-control-feedback">Ejemplo: POI1624345QWE<small>
                               </div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="control-label text-center col-md-2">Descripción</label>
+                              <div class="col-md-9">
+                                <input type="textarea" placeholder="Descripción" class="form-control">
+                                <small class="form-control-feedback"> </small>
+                              </div>
+                            </div>
+                            <h3 class="card-title">Contacto</h3>
+                            <hr>
+                            <div class="form-group row">
+                              <label class="control-label text-center col-md-2">Nombre</label>
+                              <div class="col-md-9">
+                                <input type="text" placeholder="Nombre completo" class="form-control">
+                                <small class="form-control-feedback"> </small>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="control-label text-center col-md-2">Correo</label>
+                              <div class="col-md-9">
+                                <input type="email" placeholder="Correo" class="form-control">
+                                <small class="form-control-feedback"> </small>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="control-label text-center col-md-2">Número</label>
+                              <div class="col-md-9">
+                                <input type="number" placeholder="Número telefónico" class="form-control">
+                                <small class="form-control-feedback"> </small>
+                              </div>
+                            </div>
                           </div>
+                        </form>
                       </div>
-                  </div>
-                  <div class="col-md-6 col-lg-4">
-                      <div class="card card-body">
-                          <!-- Row -->
-                          <div class="row padleft">
-                              <!-- Column -->
-                              <div class="round round-lg round-danger align-self-center">
-                                  <i class="mdi mdi-harddisk"></i>
-                              </div>
-                              <div class="col p-r-0 align-self-center">
-                                  <h2 class="font-light m-b-0 text-center">Trafico</h2>
-                                  <h6 class="font-light m-b-0 text-center">Ancho de banda</h6>
-                              </div>
-                              <div class="col align-self-center padleftmin">
-                                  <div data-label="20%" class="css-bar m-b-0 css-bar-danger css-bar-20"></div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+                    </div>
+                  </div>
                 </div>
+
+                <!--<iframe src="http://192.168.0.40:5601/app/kibana#/dashboard/32e1f900-d87a-11e8-9ed7-8f41f487c1dd?embed=true&_g=(refreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-6M%2Cmode%3Aquick%2Cto%3Anow))" width="600px"></iframe>-->
 
                 <!-- Row -->
                 <!-- ============================================================== -->
@@ -376,11 +366,10 @@
     <script src="assets/plugins/d3/d3.min.js"></script>
     <script src="assets/plugins/c3-master/c3.min.js"></script>
     <!-- Chart JS -->
-    <!--<script src="js/dashboard1.js"></script>-->
+    <!--<script src="js/dashboard3.js"></script>-->
     <!-- ============================================================== -->
     <!-- Style switcher -->
     <!-- ============================================================== -->
     <script src="assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
 </body>
-
 </html>

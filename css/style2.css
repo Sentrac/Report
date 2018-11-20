@@ -36,6 +36,12 @@
 .txt-rojo {
 	color: #d13239 !important;
 }
+.txt-azul {
+	color: #00BFFF !important;
+}
+.txt-verde {
+	color: #228B22 !important;
+}
 
 .placeOk::placeholder {
 	color: pink !important;

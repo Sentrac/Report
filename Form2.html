@@ -198,8 +198,7 @@
                         <li><a class="waves-effect waves-dark" href="#"><i class="mdi mdi-home"></i><span class="hide-menu">Inicio</span></a></li>
                         <li><a class="waves-effect waves-dark" href="#"><i class="mdi mdi-account-multiple"></i><span class="hide-menu">Usuarios</span></a></li>
                         <li><a class="waves-effect waves-dark" href="#"><i class="mdi mdi-laptop"></i><span class="hide-menu">Clientes</span></a></li>
-                        <li><a class="waves-effect waves-dark" href="#"><i class="mdi mdi-file-chart"></i><span class="hide-menu">Reportes</span></a></li>
-                        </li>
+                        <!--<li><a class="waves-effect waves-dark" href="#"><i class="mdi mdi-file-chart"></i><span class="hide-menu">Reportes</span></a></li>-->
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -256,6 +255,31 @@
                             <h4 class="card-title">Datos</h4>
                             <hr>
                             <div class="form-group row">
+                              <label class="control-label text-center col-md-2">Nombre</label>
+                              <div class="col-md-9">
+                                <input type="text" placeholder="Nombre" class="form-control">
+                                <small class="form-control-feedback"> </small>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="control-label text-center col-md-2">Correo</label>
+                              <div class="col-md-9">
+                                <input type="email" placeholder="Correo" class="form-control">
+                                <small class="form-control-feedback">Ejemplo: qwer1234@warriorslabs.com</small>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="control-label text-right col-md-2">Grupo o Cliente</label>
+                              <div class="col-md-9">
+                                <select class="form-control custom-select">
+                                  <option value="Grupo 1">Grupo 1</option>
+                                  <option value="Grupo 2">Grupo 2</option>
+                                  <option value="Grupo 3">Grupo 3</option>
+                                  <option value="Grupo 4">Grupo 4</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group row">
                               <label class="control-label text-center col-md-2">Usuario</label>
                               <div class="col-md-9">
                                 <input type="text" placeholder="Usuario" class="form-control">
@@ -277,43 +301,25 @@
                               </div>
                             </div>
                             <div class="form-group row">
-                              <label class="control-label text-center col-md-2">Correo</label>
-                              <div class="col-md-9">
-                                <input type="email" placeholder="Correo" class="form-control">
-                                <small class="form-control-feedback">Ejemplo: qwer1234@warriorslabs.com</small>
-                              </div>
-                            </div>
-                            <div class="form-group row">
-                              <label class="control-label text-right col-md-2">Grupo o Cliente</label>
+                              <label class="control-label text-right col-md-2">Rol</label>
                               <div class="col-md-9">
                                 <select class="form-control custom-select">
-                                  <option value="Grupo 1">Grupo 1</option>
-                                  <option value="Grupo 2">Grupo 2</option>
-                                  <option value="Grupo 3">Grupo 3</option>
-                                  <option value="Grupo 4">Grupo 4</option>
+                                  <optgroup label="Roles"></optgroup>
+                                  <option value="superadmin">Super Administrador</option>
+                                  <option value="administrador">Administrador</option>
+                                  <option value="consultor">Consultor</option>
                                 </select>
                               </div>
-                          </div>
-                          <div class="form-group row">
-                            <label class="control-label text-right col-md-2">Rol</label>
-                            <div class="col-md-9">
-                              <select class="form-control custom-select">
-                                <optgroup label="Roles"></optgroup>
-                                <option value="superadmin">Super Administrador</option>
-                                <option value="administrador">Administrador</option>
-                                <option value="consultor">Consultor</option>
-                              </select>
                             </div>
-                          </div>
                           </div>
                           <div class="form-actions">
                             <div class="row">
                               <div class="col-md-12">
                                 <div class="row">
-                                    <div class="offset-sm-4 col-md-8">
-                                        <button type="submit" class="btn btn-success"> <i class="mdi mdi-content-save"></i> Guardar</button>
-                                        <button type="button" class="btn btn-inverse"> <i class="mdi mdi-close-circle"></i> Cancel</button>
-                                    </div>
+                                  <div class="offset-sm-4 col-md-8">
+                                    <button type="submit" class="btn btn-success"> <i class="mdi mdi-content-save"></i> Guardar</button>
+                                    <button type="button" class="btn btn-inverse"> <i class="mdi mdi-close-circle"></i> Cancel</button>
+                                  </div>
                                 </div>
                               </div>
                             </div>
